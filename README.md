@@ -14,4 +14,5 @@ Using [mocha](https://mochajs.org/) instead of [jest](https://jestjs.io/) works:
 
     npm run test-mocha
 
-    
+
+You can now add inconqequential code to the test case, and the test still passes. E.g. [comment this line](https://github.com/opyate/jest-seedrandom-testcase/blob/mocha/src/foo/thing.test.ts#L22).
