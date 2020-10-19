@@ -6,9 +6,11 @@ This small project uses [seedrandom](https://github.com/davidbau/seedrandom) to 
 
 Running the test outputs:
 
-> Calling Math.random for the very first time matches the first expected random number 0.9282578795792454
-> [ 1, 4, 5, 3, 2 ]
-> another Math.random from within the test:  0.9776037585079486
+```
+Calling Math.random for the very first time matches the first expected random number 0.9282578795792454
+[ 1, 4, 5, 3, 2 ]
+another Math.random from within the test:  0.9776037585079486
+```
 
 The random number `0.9776037585079486` matches the 65th random number in the expected list below, which means the Node/Jest internals must call Math.random 58 more times.
 
@@ -115,9 +117,11 @@ undefined
 
 Output:
 
-> Calling Math.random for the very first time matches the first expected random number 0.9282578795792454
-> [ 2, 4, 3, 1, 5 ]
-> another Math.random() yields the 7th random number in the list: 0.827952903744234
+```
+Calling Math.random for the very first time matches the first expected random number 0.9282578795792454
+[ 2, 4, 3, 1, 5 ]
+another Math.random() yields the 7th random number in the list: 0.827952903744234
+```
 
 
 The array above does not match the array in the test, although the first random number is `0.9282578795792454` (which means seeding works).
